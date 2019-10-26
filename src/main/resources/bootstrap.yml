@@ -1,3 +1,4 @@
+#springcloud 目前版本，使用bus刷新，要以post方式访问actuator/bus-refresh来启用bus刷新
 spring:
   application:
     name: spring-cloud-config-client
@@ -27,6 +28,7 @@ management:
   endpoint:
     env:
       enabled: false
+  #现版本打开端点的热刷新和bus热刷新功能
   endpoints:
     web:
       exposure:
